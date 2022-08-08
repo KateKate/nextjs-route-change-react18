@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Link from 'next/link';
 import styles from '../styles/Home.module.css';
 
@@ -8,10 +7,6 @@ export default function Home() {
 
   return (
     <>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
-
       <h1 className={styles.title}>Index</h1>
 
       <div className={styles.grid}>
@@ -19,22 +14,6 @@ export default function Home() {
           <Link href="/page1">Go to Page1</Link>
         </p>
       </div>
-      {/* 
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p> */}
     </>
   );
 }
