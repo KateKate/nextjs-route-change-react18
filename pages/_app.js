@@ -1,5 +1,4 @@
 import '../styles/globals.css';
-import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { useRouter } from 'next/router';
 import { useRef, useEffect } from 'react';
@@ -36,15 +35,12 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-      </Head>
       <main className={styles.main}>
         <Component {...pageProps} />
         <h2>React 18</h2>
         {Object.keys(metrics).map((name) => {
           return (
-            <p className={styles.description} key={name}>
+            <p className={styles.description}>
               {name} <br />
               <i>
                 avg:{' '}
